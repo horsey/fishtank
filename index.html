@@ -42,7 +42,7 @@ function sendHTTPRequest(request, successcallback, failurecallback) {
             }
         });
 }  function on_toggleLightsButton_click( ) {
-      sendHTTPRequest(createHTTPRequest('https://107.143.96.69:5005/demo.php?type=lights', 'GET'),
+      sendHTTPRequest(createHTTPRequest('http://107.143.96.69:5005/demo.php?type=lights', 'GET'),
    function(data){
       $('.web-preview-content .infoLabel .label').html(data);
   },
@@ -52,7 +52,7 @@ function sendHTTPRequest(request, successcallback, failurecallback) {
   };
 
   function on_feedButton_click( ) {
-      sendHTTPRequest(createHTTPRequest('https://107.143.96.69:5005/demo.php?type=lights', 'GET'),
+      sendHTTPRequest(createHTTPRequest('http://107.143.96.69:5005/demo.php?type=lights', 'GET'),
    function(success_data){
 
   },
