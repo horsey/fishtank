@@ -42,7 +42,7 @@ function sendHTTPRequest(request, successcallback, failurecallback) {
             }
         });
 }  function on_toggleLightsButton_click( ) {
-      sendHTTPRequest(createHTTPRequest('http://107.143.96.69:5005/demo.php?type=lights', 'GET'),
+      sendHTTPRequest(createHTTPRequest('http://iot.snapp.click:1337/107.143.96.69:5005/demo.php?type=lights', 'GET'),
    function(data){
       $('.web-preview-content .infoLabel .label').html(data);
   },
@@ -52,7 +52,7 @@ function sendHTTPRequest(request, successcallback, failurecallback) {
   };
 
   function on_feedButton_click( ) {
-      sendHTTPRequest(createHTTPRequest('http://107.143.96.69:5005/demo.php?type=lights', 'GET'),
+      sendHTTPRequest(createHTTPRequest('http://iot.snapp.click:1337/107.143.96.69:5005/demo.php?type=lights', 'GET'),
    function(success_data){
 
   },
@@ -62,7 +62,7 @@ function sendHTTPRequest(request, successcallback, failurecallback) {
   };
 
   function on_imageRefreshButton_click( ) {
-        var ts = moment().format('x');var img = 'https://107.143.96.69:5005/images/fishtank.png?';  $('.web-preview-content .fishtankImage img').attr('src',img+ts);  $('.web-preview-content .fishtankImage img').removeClass('placeholder');  $('.web-preview-content .fishtankImage img').addClass('maxWidth');
+        var ts = moment().format('x');var img = 'https://iot.snapp.click:1337/107.143.96.69:5005/images/fishtank.png?';  $('.web-preview-content .fishtankImage img').attr('src',img+ts);  $('.web-preview-content .fishtankImage img').removeClass('placeholder');  $('.web-preview-content .fishtankImage img').addClass('maxWidth');
   };
 
 
